@@ -1,0 +1,7 @@
+.panorama img {
+  height: 100vh;
+}
+
+.panorama {
+  display: flex;
+}
