@@ -4,10 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>Document</title>
+    <script defer src="/assets/js/script.js"></script>
+    <title>Het Utrechts Archief</title>
   </head>
 
   <body>
+    <!-- here your website content -->
+    <header class="your-website-content">
+      <button class="btn btn-orange show-sidebar">show sidebar</button>
+    </header>
+
+    <!-- here your sidebar -->
+    <aside class="sidebar show">
+      <div class="block-dom"></div>
+      <div class="sidebar-content">
+        <button class="btn close-sidebar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <h2>Side Bar Content</h2>
+        <main class="width-100">
+          <p class="reality">
+            <span>
+              Yes, to tell the truth, I received information support from
+              chatGPT while preparing this pen. For example, I learned some new
+              information such as blur effect and animation effect. Of course,
+              since this information is on the internet, it may not be
+              considered as artificial intelligence help, but this article will
+              be included here to support those who are new to coding.
+            </span>
+          </p>
+        </main>
+      </div>
+    </aside>
+
     <div class="panorama">
       <img src="/assets/images/X12725 - 135002.jpg" alt="" /><img
         src="/assets/images/X12726 - 135003.jpg"
@@ -59,5 +103,59 @@
         alt=""
       />
     </div>
+    <button class="btn_first" data-modal-target="#modal"></button>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Example Modal</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img
+          class="aanvullend"
+          src="/assets/images/X12726 - 135003.jpg"
+          alt=""
+          height="300"
+          width="300"
+        />
+        <p>
+          <span>Beschrijving:</span> Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Esse quod alias ut illo doloremque eum ipsum
+          obcaecati distinctio debitis reiciendis quae quia soluta totam
+          doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus
+          ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad
+          autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat
+          deserunt voluptatibus tenetur sint officiis perferendis atque!
+          Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto
+          totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero.
+          Ex, repellat sapiente!
+        </p>
+        <p><span>Catalogusnummer:</span> 12345</p>
+      </div>
+    </div>
+    <button class="btn_second" data-modal-target="#modal"></button>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Example Modal</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img
+          src="/assets/images/X12726 - 135003.jpg"
+          alt=""
+          height="300"
+          width="300"
+        />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias
+        ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis
+        quae quia soluta totam doloribus quos nesciunt necessitatibus,
+        consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum
+        voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet
+        assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur
+        sint officiis perferendis atque! Voluptatem maxime eius eum dolorem
+        dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi
+        iure! Eligendi, eius libero. Ex, repellat sapiente!
+      </div>
+    </div>
+    <div id="overlay"></div>
   </body>
 </html>
