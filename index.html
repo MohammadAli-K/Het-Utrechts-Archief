@@ -3,9 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/zoomist@2/zoomist.css"
+    />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script defer src="/assets/js/script.js"></script>
     <title>Het Utrechts Archief</title>
+    <!-- styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/zoomist@2/zoomist.css"
+    />
+
+    <!-- scripts -->
+    <script type="module">
+      import Zoomist from 'https://cdn.jsdelivr.net/npm/zoomist@2/zoomist.js';
+
+      const zoomist = new Zoomist('.zoomist-container', {
+        // Optional parameters
+        maxScale: 4,
+        bounds: true,
+        // if you need slider
+        slider: true,
+        // if you need zoomer
+        zoomer: true,
+      });
+    </script>
   </head>
 
   <body>
@@ -36,18 +60,12 @@
             />
           </svg>
         </button>
-        <h2>Side Bar Content</h2>
+        <h2>Beschrijving</h2>
+        <div id="info"></div>
         <main class="width-100">
-          <p class="reality">
-            <span>
-              Yes, to tell the truth, I received information support from
-              chatGPT while preparing this pen. For example, I learned some new
-              information such as blur effect and animation effect. Of course,
-              since this information is on the internet, it may not be
-              considered as artificial intelligence help, but this article will
-              be included here to support those who are new to coding.
-            </span>
-          </p>
+          <!-- <p class="reality" id="info">
+            <span> </span>
+          </p> -->
         </main>
       </div>
     </aside>
@@ -157,5 +175,22 @@
       </div>
     </div>
     <div id="overlay"></div>
+
+    <!-- zoomist-container -->
+    <div class="zoomist-container">
+      <!-- zoomist-wrapper is required -->
+      <div class="zoomist-wrapper">
+        <!-- zoomist-image is required -->
+        <div class="zoomist-image">
+          <!-- you can add anything you want to zoom here. -->
+        </div>
+      </div>
+    </div>
+
+    <!-- styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/zoomist@2/zoomist.css"
+    />
   </body>
 </html>

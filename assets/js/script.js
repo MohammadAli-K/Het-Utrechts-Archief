@@ -42,3 +42,19 @@ showSideBar.addEventListener('click', () => sidebar.classList.add('show'));
 closeSideBar.addEventListener('click', () => sidebar.classList.remove('show'));
 
 blockDom.addEventListener('click', () => sidebar.classList.remove('show'));
+
+// /////////////////////////////////////////////////////////////////////
+
+document.addEventListener('scroll', (event) => {
+  //console.log(window.scrollX);
+  let vw = Math.max(
+    document.documentElement.clientWidth || 0,
+    window.innerWidth || 0
+  );
+  let info = document.getElementById('info');
+  vw = vw / 2;
+  let place = Math.floor(window.scrollX / vw);
+  info.innerHTML = data[place];
+});
+
+let data = ['<b>info1</b>', 'info2', 'info3', 'info4'];
