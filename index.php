@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/zoomist@2/zoomist.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script defer src="/assets/js/script.js"></script>
+    <title>Het Utrechts Archief</title>
+    <!-- styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/zoomist@2/zoomist.css"
+    />
+
+    <!-- scripts -->
+    <script type="module">
+      import Zoomist from 'https://cdn.jsdelivr.net/npm/zoomist@2/zoomist.js';
+
+      const zoomist = new Zoomist('.zoomist-container', {
+        // Optional parameters
+        maxScale: 4,
+        bounds: true,
+        // if you need slider
+        slider: true,
+        // if you need zoomer
+        zoomer: true,
+
+        wheelable: false,
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- here your website content -->
+    <header class="your-website-content">
+      <button class="btn btn-orange show-sidebar">show sidebar</button>
+    </header>
+
+    <!-- here your sidebar -->
+    <aside class="sidebar show">
+      <div class="block-dom"></div>
+      <div class="sidebar-content">
+        <button class="btn close-sidebar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <h2>Beschrijving</h2>
+        <div id="info"></div>
+        <main class="width-100">
+          <!-- <p class="reality" id="info">
+            <span> </span>
+          </p> -->
+        </main>
+      </div>
+    </aside>
+    <div class="zoomist-container">
+      <!-- zoomist-wrapper is required -->
+      <div class="zoomist-wrapper">
+        <!-- zoomist-image is required -->
+        <div class="zoomist-image">
+          <!-- you can add anything you want to zoom here. -->
+          <div class="panorama">
+            <img src="/assets/images/afb1.jpg" alt="" />
+            <img src="/assets/images/afb2.jpg" alt="" />
+            <img src="/assets/images/afb3.jpg" alt="" />
+            <img src="/assets/images/afb4.jpg" alt="" />
+            <img src="/assets/images/afb5.jpg" alt="" />
+            <img src="/assets/images/afb6.jpg" alt="" />
+            <img src="/assets/images/afb7.jpg" alt="" />
+            <img src="/assets/images/afb8.jpg" alt="" />
+            <img src="/assets/images/afb9.jpg" alt="" />
+            <img src="/assets/images/afb10.jpg" alt="" />
+            <img src="/assets/images/afb11.jpg" alt="" />
+            <img src="/assets/images/afb12.jpg" alt="" />
+            <img src="/assets/images/afb13.jpg" alt="" />
+            <img src="/assets/images/afb14.jpg" alt="" />
+            <img src="/assets/images/afb15.jpg" alt="" />
+            <img src="/assets/images/afb16.jpg" alt="" />
+            <img src="/assets/images/afb17.jpg" alt="" />
+            <img src="/assets/images/afb18.jpg" alt="" />
+            <img src="/assets/images/afb19.jpg" alt="" />
+            <img src="/assets/images/afb20.jpg" alt="" />
+            <img src="/assets/images/afb21.jpg" alt="" />
+            <img src="/assets/images/afb22.jpg" alt="" />
+            <img src="/assets/images/afb23.jpg" alt="" />
+            <img src="/assets/images/afb24.jpg" alt="" />
+            <img src="/assets/images/afb25.jpg" alt="" />
+            <img src="/assets/images/afb26.jpg" alt="" />
+            <img src="/assets/images/afb27.jpg" alt="" />
+            <img src="/assets/images/afb28.jpg" alt="" />
+            <img src="/assets/images/afb29.jpg" alt="" />
+            <img src="/assets/images/afb30.jpg" alt="" />
+            <img src="/assets/images/afb31.jpg" alt="" />
+            <img src="/assets/images/afb32.jpg" alt="" />
+            <img src="/assets/images/afb33.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn_first" data-modal-target="#modal"></button>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Example Modal</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img
+          class="aanvullend"
+          src="/assets/images/X12726 - 135003.jpg"
+          alt=""
+          height="300"
+          width="300"
+        />
+        <p>
+          <span>Beschrijving:</span> Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Esse quod alias ut illo doloremque eum ipsum
+          obcaecati distinctio debitis reiciendis quae quia soluta totam
+          doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus
+          ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad
+          autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat
+          deserunt voluptatibus tenetur sint officiis perferendis atque!
+          Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto
+          totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero.
+          Ex, repellat sapiente!
+        </p>
+        <p><span>Catalogusnummer:</span> 12345</p>
+      </div>
+    </div>
+    <button class="btn_second" data-modal-target="#modal"></button>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Example Modal</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img
+          src="/assets/images/X12726 - 135003.jpg"
+          alt=""
+          height="300"
+          width="300"
+        />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias
+        ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis
+        quae quia soluta totam doloribus quos nesciunt necessitatibus,
+        consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum
+        voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet
+        assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur
+        sint officiis perferendis atque! Voluptatem maxime eius eum dolorem
+        dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi
+        iure! Eligendi, eius libero. Ex, repellat sapiente!
+      </div>
+    </div>
+    <div id="overlay"></div>
+
+    <!-- zoomist-container -->
+
+    <!-- styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/zoomist@2/zoomist.css"
+    />
+  </body>
+</html>

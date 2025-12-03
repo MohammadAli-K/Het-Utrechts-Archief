@@ -19,6 +19,7 @@ body {
   /*   background-image: url("https://images.unsplash.com/photo-1707380657492-23dae310b648"); */
   background-size: cover;
   color: #ffffff;
+  overflow: scroll;
 }
 .your-website-content {
   width: 100%;
@@ -132,7 +133,7 @@ main {
   color: #ffffff;
   outline: 4px solid #334155;
   border-radius: 4px 0 0 4px;
-  overflow-y: scroll;
+  -y: scroll;
   transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
   scroll-behavior: smooth;
   &::-webkit-scrollbar {
@@ -290,10 +291,10 @@ span {
   color: black;
 }
 
-.zoomist-container {
+/* .zoomist-container {
   width: 100%;
   max-width: 600px;
-}
+} */
 
 .zoomist-image {
   width: 100%;
